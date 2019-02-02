@@ -1,0 +1,107 @@
+{% extends 'cms/base.html' %}
+
+{% block head %}
+    <link rel="stylesheet"
+          href="{% static 'adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css' %}">
+    <script src="{% static 'adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js' %}"></script>
+    <script src="{% static 'js/newsmanage.min.js' %}"></script>
+
+{% endblock %}
+
+{% block content-header %}
+    <h1>新闻管理</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <label>时间：</label>
+                            {% if start %}
+                                <input type="text" class="form-control" placeholder="开始时间" id="starttime" name="start"
+                                       readonly value="{{ start }}">
+                            {% else %}
+                                <input type="text" class="form-control" placeholder="开始时间" id="starttime" name="start"
+                                       readonly>
+                            {% endif %}
+
+                            <span>==></span>
+                            {% if end %}
+                                <input type="text" class="form-control" placeholder="结束时间" id="endtime" name="end"
+                                       readonly value="{{ end }}">
+                            {% else %}
+                                <input type="text" class="form-control" placeholder="结束时间" id="endtime" name="end"
+                                       readonly>
+                            {% endif %}
+                        </div>
+                        <div class="form-group" style="margin-left: 40px">
+                            <label for="key-word">关键字查找:</label>
+                            {% if title %}
+                                <input type="text" class="form-control" id="key-word" placeholder="篮球" name="title"
+                                       value="{{ title }}">
+                            {% else %}
+                                <input type="text" class="form-control" id="key-word" placeholder="篮球" name="title">
+                            {% endif %}
+                        </div>
+                        <div class="form-group dropdown" style="margin-left: 40px">
+                            <label for="category-input">按分类查找：</label>
+                            <select name="category" id="category-input" class="form-control">
+                                {% if category_id == 0 %}
+                                    <option value="0" selected>全部分类</option>
+                                {% else %}
+                                    <option value="0">全部分类</option>
+                                {% endif %}
+                                {% for category in categories %}
+                                    {% if category.id == category_id %}
+                                        <option value="{{ category.id }}" selected>{{ category.name }}</option>
+                                    {% else %}
+                                        <option value="{{ category.id }}">{{ category.name }}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-left: 50px">
+                            <button class="btn btn-primary">查询</button>
+                        </div>
+                        <div class="form-group ">
+                            <a href="{% url 'cms:news_manage' %}" class="btn btn-warning">清除查询</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="box-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="col-md-4">新闻标题</th>
+                            <th class="col-md-2">新闻分类</th>
+                            <th class="col-md-2">发布时间</th>
+                            <th class="col-md-2">发布人</th>
+                            <th class="col-md-2">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for news in newses %}
+                            <tr>
+                                <td><a target="_blank"
+                                       href="{% url 'news:news_detail' news_id=news.id %}">{{ news.title }}</a></td>
+                                <td>{{ news.category.name }}</td>
+                                <td>{{ news.pub_time }}</td>
+                                <td>{{ news.author.username }}</td>
+                                <td>
+                                    <button class="btn btn-danger delete-btn btn-xs" data-news-id="{{ news.id }}">删除</button>
+                                    <a href="{% url 'cms:edit_news' %}?news_id={{ news.id }}" class="btn btn-primary btn-xs" >编辑</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

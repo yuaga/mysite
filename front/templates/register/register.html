@@ -1,0 +1,72 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Bokebook |注册
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/register.min.css' %}">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".img_captcha").click(function () {
+                $('.img_captcha').attr('src', '/auth/img_captcha/' + '?random=' + Math.random())
+            });
+        });
+        $(document).ready(function () {
+            $(".message-box").click(function () {
+                $(".message-box").fadeOut(750);
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="wrapper">
+            <div class="register-box">
+                <form action="" method="post" class="register-form">
+                    {% if message %}
+                        <div class="message-box" style="height: 100%;background: #d43f3a;border-radius: 3px;
+padding: 5px;cursor: pointer;box-sizing:border-box;">
+                            <div class="alert-warning" style="font-size: 14px;">
+                                <p style="width: 100%;line-height: 30px">{{ message }}</p>
+                            </div>
+
+                        </div>
+                    {% endif %}
+
+                    {% csrf_token %}
+                    <p class="title">请注册</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="手机号/telephone" name="telephone">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="用户名/username" name="username">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="密码/password" name="password1">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="确认密码/confirm password" name="password2">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="captcha-form">
+                            <input type="text" class="form-control" placeholder="验证码/security code" name="img_captcha">
+                        </div>
+                        <div class="captcha-form-addon">
+                            <img src="{% url 'login:img_captcha' %}" alt="" class="img_captcha">
+                        </div>
+
+                    </div>
+
+                    <input type="submit" class="register-btn" value="点击注册">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

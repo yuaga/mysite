@@ -1,0 +1,82 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Boke首页
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.min.css' %}">
+    <script src="{% static 'arttemplate/template-web.js' %}"></script>
+    <script src="{% static 'js/index.min.js' %}"></script>
+    <script id="news-list" type="text/html">
+        {% verbatim %}
+        {{ each newses news index }}
+        <li>
+            <div class="photo-box">
+                <img src="{{ news.thumbnail }}" alt="">
+            </div>
+            <div class="news-detail">
+                <p class="news-title"><a href="/news/{{ news.id }}/">{{ news.title }}</a></p>
+                <p class="news-content">{{ news.desc }}</p>
+                <p class="more">
+                    <span class="category">{{ news.category.name }}</span>
+                    <span class="create-time">{{ news.pub_time|dateFormat }}</span>
+                    <span class="author">{{ news.author.username }}</span>
+                </p>
+            </div>
+        </li>
+        {{ /each }}
+        {% endverbatim %}
+    </script>
+
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="wrapper">
+            <div class="news-box">
+                <ul class="news-list-group">
+                    {% for news in newses %}
+                        <li>
+                            <div class="photo-box">
+                                <img src="{{ news.thumbnail }}"
+                                     alt="">
+                            </div>
+                            <div class="news-detail">
+                                <p class="news-title">
+                                    <a href="{% url 'news:news_detail' news_id=news.id %}">{{ news.title }}</a>
+                                </p>
+                                <p class="news-content">{{ news.desc }}</p>
+                                <p class="more">
+                                    <span class="category">{{ news.category.name }}</span>
+                                    <span class="create-time">{{ news.pub_time }}</span>
+                                    <span class="author">{{ news.author.username }}</span>
+                                </p>
+                            </div>
+                        </li>
+                    {% endfor %}
+
+                </ul>
+                <div class="load-more-group">
+                    <button class="load-more" id="load-more-btn">查看更多</button>
+                </div>
+            </div>
+            <div class="side-bar">
+                网站开发人员留言：<br>
+                <br>
+                此网站是初学python开发时自学django做出来的一个网站，耗时将近3个星期，从前端到后端，自己网上查资料看视频，一步步做
+                出来的。还有很多地方不是很完善，但是却是我迈出网站开发的一大步。<br>
+                <br>
+                接下来会更深入的学习，完善功能，将django的强大展现出来。
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="dream">
+            <p>专注于个人兴趣爱好</p>
+        </div>
+        <div class="logo-box">
+            <p>Bokebook</p>
+        </div>
+    </div>
+{% endblock %}
