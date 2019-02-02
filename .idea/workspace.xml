@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/front/templates/cms/base.html" description="    &lt;script src=&quot;{% static 'sweetalert/sweetalert...." line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b496da37-7433-45d3-8da1-4a0b1f27ae15" name="Default Changelist" comment="删除数据库迁移脚本" />
+    <list default="true" id="b496da37-7433-45d3-8da1-4a0b1f27ae15" name="Default Changelist" comment="删除数据库迁移脚本">
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="398">
+              <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -162,11 +164,6 @@
             </path>
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -260,7 +257,7 @@
       <workItem from="1548943491174" duration="4802000" />
       <workItem from="1549079251954" duration="9178000" />
       <workItem from="1549102976832" duration="44000" />
-      <workItem from="1549104152789" duration="2375000" />
+      <workItem from="1549104152789" duration="2738000" />
     </task>
     <task id="LOCAL-00001" summary="修改了django版本号。2.x以上版本再linux服务器上不能识别。">
       <created>1548858635626</created>
@@ -315,7 +312,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416298000" />
+    <option name="totallyTimeSpent" value="416661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="398">
+          <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
         </state>
       </provider>
     </entry>
