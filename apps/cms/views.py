@@ -110,10 +110,9 @@ def del_news(request):
 @permission_required(perm='news.change_addcategory', login_url='/')
 def category_news(request):
     categories = AddCategory.objects.all()
-    for category in categories:
-        news = News.objects.filter(category=category)
+    newses = News.objects.all()
     context = {
-        'news': news,
+        'newses': newses,
         'categories': categories
     }
     return render(request, 'cms/category.html', context=context)

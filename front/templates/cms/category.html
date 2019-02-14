@@ -27,7 +27,7 @@
                         {% for category in categories %}
                             <tr data-pk="{{ category.pk }}" data-name="{{ category.name }}">
                                 <td>{{ category.name }}</td>
-                                <td>{{ news_count }}</td>
+                                <td>{% newses.filter(category__name=category.name)_count %}</td>
                                 <td>
                                     <button class="btn btn-danger delete-btn btn-xs">删除</button>
                                     <button class="btn btn-primary edit-btn btn-xs">编辑</button>
