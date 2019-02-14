@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="474">
+              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+            <state relative-caret-position="304">
+              <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -387,7 +387,7 @@
       <workItem from="1549102976832" duration="44000" />
       <workItem from="1549104152789" duration="4359000" />
       <workItem from="1549638724150" duration="636000" />
-      <workItem from="1550042389593" duration="6126000" />
+      <workItem from="1550042389593" duration="6411000" />
     </task>
     <task id="LOCAL-00001" summary="修改了django版本号。2.x以上版本再linux服务器上不能识别。">
       <created>1548858635626</created>
@@ -442,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425044000" />
+    <option name="totallyTimeSpent" value="425329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+        <state relative-caret-position="304">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -920,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="474">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
         </state>
       </provider>
     </entry>
