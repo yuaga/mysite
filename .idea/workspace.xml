@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/front/templates/cms/base.html" description="    &lt;script src=&quot;{% static 'sweetalert/sweetalert...." line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b496da37-7433-45d3-8da1-4a0b1f27ae15" name="Default Changelist" comment="删除数据库迁移脚本">
-      <change beforePath="$PROJECT_DIR$/front/templates/cms/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/cms/category.html" afterDir="false" />
-    </list>
+    <list default="true" id="b496da37-7433-45d3-8da1-4a0b1f27ae15" name="Default Changelist" comment="删除数据库迁移脚本" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            <state relative-caret-position="437">
+              <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -278,13 +276,6 @@
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -396,7 +387,7 @@
       <workItem from="1549102976832" duration="44000" />
       <workItem from="1549104152789" duration="4359000" />
       <workItem from="1549638724150" duration="636000" />
-      <workItem from="1550042389593" duration="5878000" />
+      <workItem from="1550042389593" duration="6126000" />
     </task>
     <task id="LOCAL-00001" summary="修改了django版本号。2.x以上版本再linux服务器上不能识别。">
       <created>1548858635626</created>
@@ -451,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424796000" />
+    <option name="totallyTimeSpent" value="425044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="437">
+          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
         </state>
       </provider>
     </entry>
