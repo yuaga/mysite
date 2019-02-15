@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b496da37-7433-45d3-8da1-4a0b1f27ae15" name="Default Changelist" comment="删除数据库迁移脚本">
-      <change afterPath="$PROJECT_DIR$/apps/cms/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/cms/migrations/0002_auto_20190214_2339.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/login/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/news/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/cms/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/cms/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
@@ -60,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -391,7 +384,7 @@
       <workItem from="1549104152789" duration="4359000" />
       <workItem from="1549638724150" duration="636000" />
       <workItem from="1550042389593" duration="13555000" />
-      <workItem from="1550235991702" duration="526000" />
+      <workItem from="1550235991702" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="修改了django版本号。2.x以上版本再linux服务器上不能识别。">
       <created>1548858635626</created>
@@ -446,7 +439,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432762000" />
+    <option name="totallyTimeSpent" value="433772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,7 +454,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16397849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16397849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -871,13 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -915,20 +901,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="111" column="15" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="15" />
+        <state relative-caret-position="240">
+          <caret line="112" column="39" lean-forward="true" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="140" column="14" lean-forward="true" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/cms/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
         </state>
       </provider>
     </entry>
